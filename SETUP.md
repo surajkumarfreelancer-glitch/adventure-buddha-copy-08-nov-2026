@@ -8,12 +8,12 @@ It runs on **Cloudflare Workers** (settings in `wrangler.jsonc`) with a **Cloudf
 ## 1. Create the database (2 minutes)
 1. Log in to dash.cloudflare.com.
 2. Left menu: **Storage & Databases → D1 SQL Database → Create**.
-3. Name: `adventure-buddha-db` → **Create**. (Leave it empty. The website creates its own tables.)
+3. Name: `adventure-buddha-copy-db` → **Create**. (Leave it empty. The website creates its own tables.)
 
 ## 2. Connect this GitHub repository to Cloudflare
 1. **Workers & Pages → Create → Import a repository → GitHub**, allow access to **adventure-buddha-copy-08-nov-2026**, and deploy.
    The settings come from `wrangler.jsonc` (worker name, database binding `DB`, `SITE_MODE`).
-2. If you use a new database, put its ID in `wrangler.jsonc` under `database_id`.
+2. Put the new database ID in `wrangler.jsonc` under `database_id`.
 
 ## 3. Add the setup code
 Worker **adventure-buddha-copy-08-nov-2026 → Settings → Variables and secrets → Add variable**:
