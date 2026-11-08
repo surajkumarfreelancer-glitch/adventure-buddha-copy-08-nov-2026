@@ -6,7 +6,7 @@
   "compatibility_date": "2025-06-01",
   "assets": { "directory": "./public", "binding": "ASSETS" },
   "d1_databases": [
-    { "binding": "DB", "database_name": "adventure-buddha-copy-db", "database_id": "PASTE-NEW-DATABASE-ID-HERE" }
+    { "binding": "DB", "database_name": "adventure-buddha-copy-db", "database_id": "ad5d2ea2-7a24-4ec1-a302-02e0ffe7cbd6" }
   ],
   // Change to "live" on launch day (makes the site visible to Google).
   "vars": { "SITE_MODE": "trial" },
