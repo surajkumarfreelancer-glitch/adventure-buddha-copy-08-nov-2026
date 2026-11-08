@@ -1,0 +1,14 @@
+{
+  // Cloudflare Workers settings for the Adventure Buddha website (COPY made 8 Nov 2026).
+  // Uses its OWN database, separate from the original adventure-buddha-website.
+  "name": "adventure-buddha-copy-08-nov-2026",
+  "main": "src/worker.js",
+  "compatibility_date": "2025-06-01",
+  "assets": { "directory": "./public", "binding": "ASSETS" },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "adventure-buddha-copy-db", "database_id": "PASTE-NEW-DATABASE-ID-HERE" }
+  ],
+  // Change to "live" on launch day (makes the site visible to Google).
+  "vars": { "SITE_MODE": "trial" },
+  "observability": { "enabled": true }
+}
